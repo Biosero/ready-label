@@ -1,0 +1,6 @@
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\bin\Debug\APISamples.Driver.dll
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\bin\Debug\APISamples.Driver.pdb
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\bin\Debug\Newtonsoft.Json.dll
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\obj\Debug\APISamples.Driver.csprojResolveAssemblyReference.cache
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\obj\Debug\APISamples.Driver.dll
+C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.Driver\obj\Debug\APISamples.Driver.pdb

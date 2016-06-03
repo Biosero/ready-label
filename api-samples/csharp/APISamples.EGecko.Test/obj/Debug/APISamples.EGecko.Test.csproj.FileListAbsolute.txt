@@ -1,8 +1,0 @@
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\bin\Debug\APISamples.EGecko.Test.exe
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\bin\Debug\APISamples.EGecko.Test.pdb
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\bin\Debug\APISamples.Driver.dll
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\bin\Debug\Newtonsoft.Json.dll
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\bin\Debug\APISamples.Driver.pdb
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\obj\Debug\APISamples.EGecko.Test.csprojResolveAssemblyReference.cache
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\obj\Debug\APISamples.EGecko.Test.exe
-C:\Users\andre\OneDrive\Documents\GitHub\ready-label\api-samples\csharp\APISamples.EGecko.Test\obj\Debug\APISamples.EGecko.Test.pdb

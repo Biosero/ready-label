@@ -7,6 +7,7 @@ namespace APISamples.Driver.Models
 {
     public class EGeckoConfiguration
     {
+        public bool IsValidating { get; set; }
         public double PickupHeight { get; set; }
         public double ApplyHeight { get; set; }
         public double ApplyDepth { get; set; }

@@ -75,6 +75,7 @@ namespace APISamples.Driver
         {
             SendPOSTRequest<EGeckoConfiguration>(RootURL + "printers/egecko", new EGeckoConfiguration()
             {
+                IsValidating = true,
                 PickupHeight = pickupHeight,
                 ApplyHeight = applyHeight,
                 ApplyDepth = applyDepth,

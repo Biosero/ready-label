@@ -71,7 +71,7 @@ namespace APISamples.Driver
             WaitWhileBusy();
         }
 
-        public void EGeckoPrint(string fileName, Dictionary<string, bool> labelSides, Dictionary<string, string> data, double pickupHeight, double applyHeight, double applyDepth)
+        public void EGeckoPrint(string fileName, Dictionary<string, bool> labelSides, Dictionary<string, string> data, double pickupHeight, double applyHeight, double applyDepth, bool retryMissed)
         {
             SendPOSTRequest<EGeckoConfiguration>(RootURL + "printers/egecko", new EGeckoConfiguration()
             {
@@ -95,6 +95,28 @@ namespace APISamples.Driver
             Thread.Sleep(1000);
 
             WaitWhileBusy();
+
+            if (retryMissed)
+            {
+                EGeckoPrinterStatus status = SendGETRequest<EGeckoPrinterStatus>(RootURL + "printers/egecko/status?filter=state,errors");
+
+                // this logic is untested so be wary of that 
+                // also since its recursive it will never stop retrying to print
+                foreach (var item in labelSides)
+                {
+                    if (!status.LastValidationEvent.BarcodesScanned.Keys.Contains(item.Key))
+                    {
+                        EGeckoPrint(fileName, labelSides, data, pickupHeight, applyHeight, applyDepth, retryMissed);
+                    }
+                    else
+                    {
+                        if (status.LastValidationEvent.BarcodesScanned[item.Key] != "expected result") //replace expected result with whatever you expected to see here
+                        {
+                            EGeckoPrint(fileName, labelSides, data, pickupHeight, applyHeight, applyDepth, retryMissed);
+                        }
+                    }
+                }
+            }       
         }
 
         private void WaitWhileBusy()

@@ -50,7 +50,7 @@ namespace APISamples.EGecko.Test
                         { "VAR", "TEST DATA" },
                     };
 
-                    driver.EGeckoPrint(templates.FilePath, printSides, data, 0, 0, 0);
+                    driver.EGeckoPrint(templates.FilePath, printSides, data, 0, 0, 0, false);
 
                     Console.WriteLine("EGecko test completed");
                 }

@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\EGecko\EGeckoConfiguration.cs" />
+    <Compile Include="Models\EGecko\EGeckoPrinterStatus.cs" />
+    <Compile Include="Models\EGecko\EGeckoValidationEvent.cs" />
     <Compile Include="Models\LabelTemplate.cs" />
     <Compile Include="Models\PrintCommand.cs" />
     <Compile Include="Models\PrinterStatus.cs" />

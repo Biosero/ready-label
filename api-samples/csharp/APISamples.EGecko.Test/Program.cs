@@ -7,6 +7,8 @@ using System.Text;
 
 namespace APISamples.EGecko.Test
 {
+    // this is a test program 
+    // modify as necessary
     class Program
     {
         static void Main(string[] args)
@@ -20,12 +22,14 @@ namespace APISamples.EGecko.Test
 
                 if (templates != null)
                 {
+                    // initialize egecko instrument
                     Console.WriteLine("Initializing instrument");
 
                     driver.EGeckoInitializeInstrument();
 
                     Console.WriteLine("Instrument Initialized");
 
+                    // test rotations
                     Console.WriteLine("Rotating stage to 90");
                     driver.EGeckoRotateStage(90, "absolute");
 
@@ -50,6 +54,7 @@ namespace APISamples.EGecko.Test
                         { "VAR", "TEST DATA" },
                     };
 
+                    // test print and apply
                     driver.EGeckoPrint(templates.FilePath, printSides, data, 0, 0, 0, false);
 
                     Console.WriteLine("EGecko test completed");
